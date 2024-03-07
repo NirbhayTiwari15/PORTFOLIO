@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nirbhay Tiwari - Portfolio</title>
+<style>
+/* CSS for styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(44, 44, 44);
+    color: fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+}
+
+header {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: red;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.image-link img {
+        width: 200px; /* Set the width of the image */
+        height: 200px; /* Set the height of the image */
+        margin-right: 10px; /* Add some spacing between the image and text */
+        vertical-align: middle; /* Align the image vertically with the text */
+        border-radius: 10px;}
+.profile {
+        width: 450px; /* Set the width of the image */
+        height: 375px; /* Set the height of the image */
+        float:right;
+        margin-right:20px;
+    }   
+.projects a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease
+}
+.service {
+    padding: 30px 0;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:50px;
+    
+}
+.service-list div{
+    background:#6d6c6c;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition:background  0.5s , transform 0.5s;
+}
+.service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+.service-list div i h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.service-list div:hover{
+    background: #ff004f;
+    transform:translateY(-10px);
+}
+.projects a:hover {
+    background-color: rgb(26, 163, 226);
+    transform:translateY(-10px);
+
+}
+.icon:hover{
+    color: red;
+}
+#msg{
+    color: greenyellow;
+    margin-top: -2px;
+    display:block;
+
+}
+</style>
+<script src="https://kit.fontawesome.com/fef3ea9756.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <h1>Nirbhay Tiwari</h1>
+    <p>Developer</p>
+</header>
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Service</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+<section id="about">
+    <image src="pic1.jpg" class="profile" ></image>
+    <h2>About Me</h2>
+    <p>Hello! I'm Nirbhay Tiwari, a passionate undergrad Engineer with a love for creating innovative <br>solutions. I am currenty pursuing a B.Tech. degree from MSIT, Delhi, where I developed a strong <br>foundation in HTML, CSS, Java, C, Python,etc. With a keen eye for detail and a drive for excellence, I <br>strive to deliver high-quality results in every project I undertake.<br>
+    <br>My goal is to not just meet expectations, but to exceed them, providing innovative solutions that <br>make a real impact. I am constantly seeking new challenges and opportunities to grow both personally <br>and professionally.<br>    
+    <br>Explore my portfolio to see my work and let's connect to discuss how we can collaborate on <br>exciting projects!</p>
+</section>
+<section id="projects">
+    <h1>Projects</h1>
+    <div class="projects">
+        <a href="https://github.com/NirbhayTiwari15/GeeksforGeeks" class="image-link">
+            <img src="30f4d343-58b7-4851-8e45-df3c209403d1.jpg" alt="Description of the image" height:200 width:200>
+            Smart City Traffic Management System
+        </a>
+        <a href="https://github.com/NirbhayTiwari15/Library-management" class="image-link">
+        <image src="bfef7c47-87b0-4f05-85ea-adb6b08e1db5.jpg" alt="">Library Management</a>
+    </div>
+</section>
+<section id="services">
+    <h1>My Services</h1>
+    <div class="service-list">
+        <div>
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+            <p>Designing and developing responsive websites that are both visually appealing and user-friendly.</p>
+            <a href="https://en.wikipedia.org/wiki/Web_development#:~:text=Web%20development%20is%20the%20work,businesses%2C%20and%20social%20network%20services.">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h3>Mobile App Development</h3>
+            <p>Creating mobile applications for iOS and Android platforms that meet the needs of modern users.</p>
+            <a href="https://en.wikipedia.org/wiki/Mobile_app_development">Learn more</a>
+        </div>
+        <div >
+            <i class="fa-brands fa-app-store-ios"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive and engaging user interfaces that enhance user experience.</p>
+                <a href="https://en.wikipedia.org/wiki/User_experience_design">Learn more</a>
+        </div>
+    </section>
+        
+    </div>
+</section>
+<section id="skills">
+    <h1>Skills</h1>
+    <p><b>Coding Languages:</b> C, Java, Python, MySQL, DBMS, HTML, CSS, Figma, JavaScript</p>
+    <p><b>General:</b> Creativity, Leadership, Management, Teamwork</p>
+    <p><b>Technical:</b> Adaptability, Algorithms, CS Fundamentals, Research, Windows, Git, Github, Internet of Things</p>
+    <image src="codinglanguages.png" class="image-link"></image>
+</section>
+<section id="experience">
+    <h1>Experience</h1>
+    <p>Fresher</p>
+</section>
+<section id="education">
+    <h1>Education</h1>
+    <p> Senior Secondary - <a href="https://pitampura.kvs.ac.in">Kendriya Vidyalaya Pitampura,</a> New Delhi - 92.2%</p>
+    <p>Graduation - <a href="https://msit.in/"> Maharaja Surajmal Institute of Technology, </a> Janakpuri, New Delhi - Electrical and Electronic Engineering (2022-26)</p>
+    <br><h2>Certificates</h2>
+    <a href="tata imagination r1.pdf" class="image-link">
+    <image src="tata.png"><br> Tata Imagination Challenge</a>
+    
+</section>
+<section id="contact" >
+    <h1>Contact Me<h1 style="text-align: right;" >
+            <a href="Nirbhay Tiwari_resume.pdf" class="icon"><b>SEE MY RESUME<b></a> 
+    </h3></h2>
+    <i class="fa-solid fa-phone"></i><a href="9599368788" class="icon">  9599368788</a><br><i class="fa-solid fa-paper-plane"></i><a href="tiwarinirbhay15@gmail.com"  class="icon">  tiwarinirbhay15@gmail.com</a>
+    <div class="contact-form">
+        <form name="submit-to-google-sheet" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="text" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+        <span id="msg"></span>
+    </div>
+</section>
+<footer>
+    <p>Follow me on <a href="https://github.com/NirbhayTiwari15">GitHub</a> and <a href="https://www.linkedin.com/in/nirbhay-tiwari-a23b30293">LinkedIn</a>.</p>
+</footer>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyrIT8GmCgilN1pZ_x_yK2LYhZbCtxsA2R1D0izgjSvuSp5Dw7Yq0BZ5xtk1loWBBWz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

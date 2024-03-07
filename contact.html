@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7da1f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Share Your Recipe</h1>
+    <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="recipeName">Your Recipe Name:</label>
+        <input type="text" id="recipeName" name="recipeName" required><br><br>
+
+        <label for="aboutRecipe">About Recipe:</label><br>
+        <textarea id="aboutRecipe" name="aboutRecipe" rows="4" required></textarea><br><br>
+
+        <label for="recipeDetails">Recipe Details:</label><br>
+        <textarea id="recipeDetails" name="recipeDetails" rows="8" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
